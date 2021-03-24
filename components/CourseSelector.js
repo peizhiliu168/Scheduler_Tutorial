@@ -1,12 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { StyleSheet, View } from 'react-native';
 
 import Course from './Course';
 import { hasConflict } from '../utils/course'
 
 
-const CourseSelector = ({courses, view}) => {
+const CourseSelector = ({allCourses, courses, view}) => {
     const [selected, setSelected] = useState([]);
+
+    useEffect(() => {
+        setSelected(selected => (
+            selected.filter(x => allCourses.includes(x))
+        ));
+    }, [allCourses]);
 
     const toggle = course => setSelected(selected => (
         selected.includes(course) ? selected.filter(x => x !== course) : [...selected, course]
