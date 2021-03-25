@@ -3,7 +3,7 @@ import { ScrollView, StyleSheet, View } from 'react-native';
 
 import TermSelector from './TermSelector';
 import CourseSelector from './CourseSelector';
-import {getCourseTerm, terms} from '../utils/course'
+import {getCourseTerm, terms} from '../utils/course';
 
 const CourseList = ({courses, view}) => {
     const [selectedTerm, setSelectedTerm] = useState('Fall');

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { StyleSheet, View } from 'react-native';
 
 import Course from './Course';
-import { hasConflict } from '../utils/course'
+import { hasConflict } from '../utils/course';
 
 
 const CourseSelector = ({allCourses, courses, view}) => {

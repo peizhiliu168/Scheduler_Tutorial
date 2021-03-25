@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, TouchableOpacity } from 'react-native';
 
-import { getCourseNumber } from '../utils/course'
+import { getCourseNumber } from '../utils/course';
 
 const Course = ({course, isDisabled, isSelected, select, view}) => (
   <TouchableOpacity style={styles[isSelected ? 'courseButtonSelected' : isDisabled ? 'courseButtonDisabled' : 'courseButton']} 

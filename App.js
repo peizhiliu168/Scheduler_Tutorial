@@ -3,9 +3,9 @@ import React, { useState } from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 
-import ScheduleScreen from './screens/ScheduleScreen'
-import CourseDetailScreen from './screens/CourseDetailScreen'
-import UserContext from './UserContext'
+import ScheduleScreen from './screens/ScheduleScreen';
+import CourseDetailScreen from './screens/CourseDetailScreen';
+import UserContext from './UserContext';
 import CourseEditScreen from './screens/CourseEditScreen';
 
 const Stack = createStackNavigator();
